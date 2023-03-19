@@ -1,3 +1,9 @@
+@use 'variables' as *;
+@use 'atoms';
+
 .intro {
   padding: 5%;
+  background: url($background-image) $primary no-repeat no-repeat top content-box;
+  background-size: contain;
+  background-blend-mode: screen;
 }
