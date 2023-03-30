@@ -19,7 +19,7 @@ h1 {
 h2 {
   color: #25210F;
   font-weight: 900; /* Heavy */
-  font-size: 6em;
+  font-size: 5em;
   letter-spacing: 1px;
   line-height: 1.3em;
   padding: 0.2em 0.5em;
@@ -69,11 +69,34 @@ a:hover {
   border-color: #b7d6a4;
 }
 
+@media screen and (max-width: 1250px) and (min-width: 600px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
 [role=banner] > h1 {
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #25210F;
+}
+[role=banner] > h1 {
+  background-color: rgba(106, 77, 39, 0.8);
+  position: relative;
+  animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count: 3;
+}
+@keyframes example {
+  0% {
+    background-color: rgba(106, 77, 39, 0.8);
+  }
+  50% {
+    background-color: #b7d6a4;
+  }
+  100% {
+    background-color: rgba(106, 77, 39, 0.8);
+  }
 }
 
 .summary {
@@ -98,6 +121,35 @@ a:hover {
   color: #25210F;
   margin-left: -30%;
   padding: 5% 5% 5% 30%;
+  font-size: 1rem;
+}
+
+.explanation {
+  width: 60%;
+  font-size: 1rem;
+  padding: 2%;
+  align-self: flex-end;
+}
+
+.participation {
+  width: 70%;
+  background: #25210F;
+  font-size: 1rem;
+  padding: 2%;
+  align-self: flex-start;
+}
+
+.benefits {
+  width: 50%;
+  font-size: 1rem;
+  padding: 2%;
+  align-self: flex-end;
+}
+
+.requirements {
+  background: rgba(110, 124, 90, 0.9);
+  font-size: 1rem;
+  padding: 2%;
 }
 
 .sidebar {
@@ -105,18 +157,56 @@ a:hover {
   max-width: 35%;
   margin-top: 2%;
   padding: 5% 3%;
+  position: absolute;
+  right: 0;
+  top: 55em;
   font-family: Arial, sans-serif;
   font-size: 1.5rem;
   line-height: 2em;
 }
 
 .intro {
+  grid-column: 1/all;
   padding: 5%;
   background: url("mountain-river320x200.jpg") rgba(161, 176, 204, 0.95) no-repeat no-repeat top content-box;
   background-size: contain;
   background-blend-mode: screen;
 }
 
+.supporting {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+footer {
+  font-family: "Merienda One", cursive;
+  background: #b7d6a4;
+  color: #25210F;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: normal;
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+  background-color: rgba(106, 77, 39, 0.8);
+  position: absolute;
+  top: 117em;
+  animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count: 3;
+}
+
+@keyframes example {
+  0% {
+    background-color: rgba(106, 77, 39, 0.8);
+  }
+  50% {
+    background-color: #b7d6a4;
+  }
+  100% {
+    background-color: rgba(106, 77, 39, 0.8);
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -124,6 +214,11 @@ a:hover {
 html {
   background-color: #daede2;
   padding: 5%;
+}
+
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
 body {

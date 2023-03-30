@@ -7,6 +7,18 @@
   > h1 {
     // notice we have to reference the 'atoms' namespace to find our mixins.
     @include atoms.uppercase($text-dark);
+    & {
+      background-color: $brown-sidebar;
+      position: relative;
+      animation-name: example;
+      animation-duration: 10s;
+      animation-iteration-count: 3;
+    }
+    @keyframes example {
+      0% {background-color: $brown-sidebar;}
+      50% {background-color: $accent1;}
+      100% {background-color: $brown-sidebar;}
+    }
   }
 }
 .summary {
@@ -25,11 +37,41 @@
   color: $text-dark;
   margin-left: -30%;
   padding: 5% 5% 5% 30%;
+  font-size: 1rem;
+
+}
+.explanation{
+  width:60%;
+  font-size: 1rem;
+  padding: 2%;
+  align-self: flex-end;
+}
+.participation{
+  width:70%;
+  background: $text-dark;
+  font-size: 1rem;
+  padding:2%;
+  align-self: flex-start;
+}
+.benefits{
+  width:50%;
+  font-size: 1rem;
+  padding: 2%;
+  align-self: flex-end;
+}
+.requirements{
+  background: $accent2;
+  font-size: 1rem;
+  padding: 2%;
 }
 .sidebar{
   background-color: $brown-sidebar;
   max-width: 35%;
   margin-top: 2%;
   padding: 5% 3%;
+  position: absolute;
+  right: 0;
+  top: 55em;
   @include atoms.set-font(1.5rem, 2em)
+  
 }

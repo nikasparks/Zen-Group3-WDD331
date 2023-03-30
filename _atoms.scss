@@ -42,7 +42,7 @@ h1 {
 h2 {
   color: $text-dark;
   font-weight: 900; /* Heavy */
-  font-size: 6em;
+  font-size: 5em;
   letter-spacing: 1px;
   line-height: 1.3em;
   padding: 0.2em 0.5em;
@@ -84,4 +84,9 @@ a {
 }
 a:hover {
   border-color: $accent1;
+}
+@media screen and (max-width: 1250px) and (min-width: 600px)  {
+  h2{
+    font-size: 3rem;
+  }
 }

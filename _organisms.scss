@@ -2,8 +2,37 @@
 @use 'atoms';
 
 .intro {
+  grid-column: 1/all;
   padding: 5%;
   background: url($background-image1) $primary no-repeat no-repeat top content-box;
   background-size: contain;
   background-blend-mode: screen;
 }
+.supporting{
+  // grid-column: -2/all;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+footer{
+  font-family: "Merienda One", cursive;
+  background: #b7d6a4;
+  color: #25210F;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: normal;
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+  background-color: $brown-sidebar;
+  position:absolute;
+  top: 117em;
+  animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count: 3;
+  
+}
+@keyframes example {
+    0% {background-color: $brown-sidebar;}
+    50% {background-color: $accent1;}
+    100% {background-color: $brown-sidebar;}
+  }

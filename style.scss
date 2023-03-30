@@ -11,6 +11,10 @@ html {
   background-color: $background-color;
   padding: 5%;
 }
+.page-wrapper{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
 
 body {
   font-family: $fonts-body;
