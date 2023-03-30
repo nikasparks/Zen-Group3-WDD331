@@ -112,7 +112,7 @@ a:hover {
 
 .intro {
   padding: 5%;
-  background: url("mountainPic.jpg") #a1b0cc no-repeat no-repeat top content-box;
+  background: url("mountain-river320x200.jpg") rgba(161, 176, 204, 0.95) no-repeat no-repeat top content-box;
   background-size: contain;
   background-blend-mode: screen;
 }
@@ -130,7 +130,7 @@ body {
   font-family: Arial, sans-serif;
   font-size: 85%;
   color: #f9f7e9;
-  background-color: #a1b0cc;
+  background-color: rgba(161, 176, 204, 0.95);
   margin: 0;
   padding: 1em;
 }
