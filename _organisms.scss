@@ -4,7 +4,7 @@
 .intro {
   grid-column: 1/all;
   padding: 5%;
-  background: url($background-image1) $primary no-repeat no-repeat top content-box;
+  background: url($background-image) $primary no-repeat no-repeat top content-box;
   background-size: contain;
   background-blend-mode: screen;
 }
@@ -23,11 +23,11 @@ footer{
   font-weight: normal;
   margin: 1em;
   padding: 0.5em 1em;
+  align-self: flex-end;
   background-color: $brown-sidebar;
   animation-name: example;
   animation-duration: 10s;
   animation-iteration-count: 5;
-  
 }
 @keyframes example {
     0% {background-color: $brown-sidebar;}
@@ -36,6 +36,6 @@ footer{
   }
 @media screen and (min-width:800px){
   footer{
-    font-size: 1.5rem;
+    font-size: 1.5em;
   }
 }
