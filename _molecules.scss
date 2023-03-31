@@ -12,7 +12,7 @@
       position: relative;
       animation-name: example;
       animation-duration: 10s;
-      animation-iteration-count: 3;
+      animation-iteration-count: 5;
     }
     @keyframes example {
       0% {background-color: $brown-sidebar;}
@@ -25,6 +25,7 @@
   @include atoms.uppercase($text-dark);
   padding: 15% 2em;
   font-weight: 600;
+  font-size: 1.1em;
   p:last-child {
     @include atoms.divider;
   }
@@ -37,41 +38,79 @@
   color: $text-dark;
   margin-left: -30%;
   padding: 5% 5% 5% 30%;
-  font-size: 1rem;
+  font-size: 1.5em;
 
 }
 .explanation{
-  width:60%;
-  font-size: 1rem;
   padding: 2%;
-  align-self: flex-end;
+  font-size: 1.5em;
+
 }
 .participation{
-  width:70%;
+
   background: $text-dark;
-  font-size: 1rem;
+  font-size: 1.5em;
   padding:2%;
-  align-self: flex-start;
+
 }
 .benefits{
-  width:50%;
-  font-size: 1rem;
+  font-size: 1.5em;
   padding: 2%;
-  align-self: flex-end;
+
 }
 .requirements{
   background: $accent2;
-  font-size: 1rem;
+  font-size: 1.5em;
   padding: 2%;
-}
+  // width:120%;
+} 
+
 .sidebar{
   background-color: $brown-sidebar;
-  max-width: 35%;
-  margin-top: 2%;
-  padding: 5% 3%;
-  position: absolute;
-  right: 0;
-  top: 55em;
-  @include atoms.set-font(1.5rem, 2em)
+    // margin: -9%;
+    // margin-right: -17%;
+    padding: 10% 15%;
+    grid-column: 1;
+    // grid-column: -2;
+    
+    @include atoms.set-font(1.2em, 2em)
   
+}
+
+@media screen and (min-width: 800px)  {
+  .summary{
+    font-size: 1em;
+  }
+  .preamble{
+    font-size: 1em;
+  }
+  .explanation{
+    width:80%;
+    font-size: 0.9em;
+    padding: 4%;
+    align-self: flex-end;
+  }
+  .participation{
+    width:80%;
+    background: $text-dark;
+    font-size: 0.9em;
+    padding:2%;
+    align-self: flex-start;
+  }
+  .benefits{
+    width:65%;
+    font-size: 0.9em;
+    padding: 4%;
+    align-self: flex-end;
+  }
+  .requirements{
+    font-size: 0.9em;
+    width:120%;
+  } 
+  .sidebar{
+    margin: -9%;
+    margin-right: -17%;
+    grid-column: -2;
+    height:fit-content;
+  }
 }
