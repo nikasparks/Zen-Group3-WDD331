@@ -1,7 +1,8 @@
 @use "variables" as *; //this puts all the variables in the global namespace.
-// @use 'atoms';
-//@use 'molecules';
-//@use 'organisms' as o;
+@use 'atoms';
+@use 'molecules';
+@use 'organisms' as o;
+@import url('https://fonts.googleapis.com/css2?family=Mali&family=Merienda&family=Merienda+One&display=swap');
 
 * {
   box-sizing: border-box; 
@@ -10,12 +11,22 @@ html {
   background-color: $background-color;
   padding: 5%;
 }
+.page-wrapper{
+  display: grid;
+  grid-template-columns: 1fr;
+}
 
 body {
   font-family: $fonts-body;
   font-size: 85%;
-  color: $text-dark;
+  color: $text-light;
   background-color: $primary;
   margin: 0;
   padding: 1em;
+}
+
+@media screen and (min-width: 800px)  {
+  .page-wrapper{
+    grid-template-columns:2fr 1fr;
+  }
 }

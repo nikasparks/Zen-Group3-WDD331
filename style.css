@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Mali&family=Merienda&family=Merienda+One&display=swap");
+h2,
+h3,
+h4 {
+  font-family: "Merienda", cursive;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Merienda One", cursive;
+  background: #b7d6a4;
+  color: #25210F;
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: normal;
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+}
+
+h2 {
+  color: #25210F;
+  font-weight: 900; /* Heavy */
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  line-height: 1.3em;
+  padding: 0.2em 0.5em;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 200; /* Thin */
+  letter-spacing: 1px;
+  line-height: 1.3em;
+  padding: 0.5em 1em 0.25em 1em;
+}
+
+h4 {
+  font-size: 1.5em;
+  font-weight: 200; /* Thin */
+  letter-spacing: 1px;
+  line-height: 1.3em;
+  margin: 0.5em 0;
+}
+
+h5 {
+  font-family: "Mali", cursive;
+  font-size: 1.3em;
+  font-weight: 200; /* Thin */
+  letter-spacing: 1px;
+  line-height: 1.3em;
+  margin: 0.5em 0;
+}
+
+p {
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  padding: 0.5em 1em;
+  margin: 0;
+}
+
+a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  color: #f9f7e9;
+  text-decoration: none;
+  transition: border-color 0.2s ease-in-out;
+}
+
+a:hover {
+  border-color: #b7d6a4;
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 150%;
+  }
+  h2 {
+    font-size: 4em;
+  }
+  h3 {
+    font-size: 2.25em;
+  }
+  p {
+    font-family: Arial, sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+  }
+}
+[role=banner] > h1 {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #25210F;
+  background-color: rgba(106, 77, 39, 0.8);
+  position: relative;
+  animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count: 5;
+}
+@keyframes example {
+  0% {
+    background-color: rgba(106, 77, 39, 0.8);
+  }
+  50% {
+    background-color: #b7d6a4;
+  }
+  100% {
+    background-color: rgba(106, 77, 39, 0.8);
+  }
+}
+
+.summary {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #25210F;
+  padding: 15% 2em;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+.summary p:last-child {
+  border-top: 4px solid rgba(110, 124, 90, 0.9);
+  margin-top: 1em;
+  padding-top: 1.5em;
+}
+.summary a {
+  color: rgba(110, 124, 90, 0.9);
+}
+
+.preamble {
+  background: rgba(240, 234, 214, 0.85);
+  color: #25210F;
+  margin-left: -30%;
+  padding: 5% 5% 5% 30%;
+  font-size: 1.5em;
+}
+
+.explanation {
+  padding: 2%;
+  font-size: 1.5em;
+}
+
+.participation {
+  background: #25210F;
+  font-size: 1.5em;
+  padding: 2%;
+}
+
+.benefits {
+  font-size: 1.5em;
+  padding: 2%;
+}
+
+.requirements {
+  background: rgba(110, 124, 90, 0.9);
+  font-size: 1.5em;
+  padding: 2%;
+}
+
+.sidebar {
+  background-color: rgba(106, 77, 39, 0.8);
+  padding: 10% 15%;
+  grid-column: 1;
+  font-family: Arial, sans-serif;
+  font-size: 1.2em;
+  line-height: 2em;
+}
+
+footer {
+  font-family: "Merienda One", cursive;
+  background: #b7d6a4;
+  color: #25210F;
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: normal;
+  margin: 1em 0;
+  padding: 0.5em 1em;
+  align-self: flex-end;
+  background-color: rgba(106, 77, 39, 0.8);
+  position: relative;
+  animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count: 5;
+}
+@keyframes example {
+  0% {
+    background-color: rgba(106, 77, 39, 0.8);
+  }
+  50% {
+    background-color: #b7d6a4;
+  }
+  100% {
+    background-color: rgba(106, 77, 39, 0.8);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .summary {
+    font-size: 1em;
+  }
+  .preamble {
+    font-size: 1em;
+  }
+  .explanation {
+    width: 80%;
+    font-size: 0.9em;
+    padding: 4%;
+    align-self: flex-end;
+  }
+  .participation {
+    width: 80%;
+    background: #25210F;
+    font-size: 0.9em;
+    padding: 2%;
+    align-self: flex-start;
+  }
+  .benefits {
+    width: 65%;
+    font-size: 0.9em;
+    padding: 4%;
+    align-self: flex-end;
+  }
+  .requirements {
+    font-size: 0.9em;
+    width: 120%;
+  }
+  .sidebar {
+    margin: -9%;
+    margin-right: -17%;
+    grid-column: -2;
+    height: fit-content;
+  }
+  footer {
+    font-size: 1.5em;
+    margin-right: -13em;
+  }
+}
+.intro {
+  grid-column: 1/all;
+  padding: 5%;
+  background: url("mountain-river320x200.jpg") rgba(161, 176, 204, 0.95) no-repeat no-repeat top content-box;
+  background-size: contain;
+  background-blend-mode: screen;
+}
+
+.supporting {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+footer {
+  font-family: "Merienda One", cursive;
+  background: #b7d6a4;
+  color: #25210F;
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: normal;
+  margin: 1em;
+  padding: 0.5em 1em;
+  align-self: flex-end;
+  background-color: rgba(106, 77, 39, 0.8);
+  animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count: 5;
+}
+
+@keyframes example {
+  0% {
+    background-color: rgba(106, 77, 39, 0.8);
+  }
+  50% {
+    background-color: #b7d6a4;
+  }
+  100% {
+    background-color: rgba(106, 77, 39, 0.8);
+  }
+}
+@media screen and (min-width: 800px) {
+  footer {
+    font-size: 1.5em;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #daede2;
+  padding: 5%;
+}
+
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 85%;
+  color: #f9f7e9;
+  background-color: rgba(161, 176, 204, 0.95);
+  margin: 0;
+  padding: 1em;
+}
+
+@media screen and (min-width: 800px) {
+  .page-wrapper {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
