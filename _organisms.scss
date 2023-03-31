@@ -14,28 +14,3 @@
   flex-direction: column;
   align-items: flex-start;
 }
-footer{
-  font-family: "Merienda One", cursive;
-  background: #b7d6a4;
-  color: #25210F;
-  display: inline-block;
-  font-size: 1.1rem;
-  font-weight: normal;
-  margin: 1em;
-  padding: 0.5em 1em;
-  align-self: flex-end;
-  background-color: $brown-sidebar;
-  animation-name: example;
-  animation-duration: 10s;
-  animation-iteration-count: 5;
-}
-@keyframes example {
-    0% {background-color: $brown-sidebar;}
-    50% {background-color: $accent1;}
-    100% {background-color: $brown-sidebar;}
-  }
-@media screen and (min-width:800px){
-  footer{
-    font-size: 1.5em;
-  }
-}

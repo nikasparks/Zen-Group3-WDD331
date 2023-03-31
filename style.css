@@ -249,38 +249,6 @@ footer {
   align-items: flex-start;
 }
 
-footer {
-  font-family: "Merienda One", cursive;
-  background: #b7d6a4;
-  color: #25210F;
-  display: inline-block;
-  font-size: 1.1rem;
-  font-weight: normal;
-  margin: 1em;
-  padding: 0.5em 1em;
-  align-self: flex-end;
-  background-color: rgba(106, 77, 39, 0.8);
-  animation-name: example;
-  animation-duration: 10s;
-  animation-iteration-count: 5;
-}
-
-@keyframes example {
-  0% {
-    background-color: rgba(106, 77, 39, 0.8);
-  }
-  50% {
-    background-color: #b7d6a4;
-  }
-  100% {
-    background-color: rgba(106, 77, 39, 0.8);
-  }
-}
-@media screen and (min-width: 800px) {
-  footer {
-    font-size: 1.5em;
-  }
-}
 * {
   box-sizing: border-box;
 }
