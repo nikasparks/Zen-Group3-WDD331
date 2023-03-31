@@ -95,7 +95,7 @@ a:hover {
   position: relative;
   animation-name: example;
   animation-duration: 10s;
-  animation-iteration-count: 5;
+  animation-iteration-count: infinite;
 }
 @keyframes example {
   0% {
@@ -180,7 +180,7 @@ footer {
   position: relative;
   animation-name: example;
   animation-duration: 10s;
-  animation-iteration-count: 5;
+  animation-iteration-count: infinite;
 }
 @keyframes example {
   0% {
